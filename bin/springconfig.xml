@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:oxm="http://www.springframework.org/schema/oxm"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd   
+       http://www.springframework.org/schema/oxm 
+       http://www.springframework.org/schema/oxm/spring-oxm.xsd">
+
+    <bean class="com.vco.spring.cunstructor.bean.Pen" id="Pen1">
+    	<constructor-arg name="serialNumber" value="1"/>
+    	<constructor-arg name="brand" value="Ryenolds"/>
+    	<constructor-arg name="name" value="Gel Writer"/>
+    	<constructor-arg name="price" value="50.0"/>
+    </bean>
+    
+    
+   <bean class="com.vco.spring.cunstructor.bean.Pen" id="Pen2">
+    	<constructor-arg index="0" value="2"/>
+    	<constructor-arg index="1" value="cello"/>
+    	<constructor-arg index="2" value="Racer Gel "/>
+    	<constructor-arg index="3" value="60"/>
+    </bean> 
+   
+
+</beans>
